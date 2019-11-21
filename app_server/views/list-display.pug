@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Here is a list of available devices
+  ul
+    each obj in mobiles
+        li
+            b=obj.name
+            p=" Operaring System: "+obj.OS
